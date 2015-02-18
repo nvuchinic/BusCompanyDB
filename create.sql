@@ -23,8 +23,8 @@ create table  Linije(
 	zadnja_stanica varchar(20),
 	interval integer,
 	pocetak varchar (5),
-	ID_tipa integer,
-	foreign key(ID_tipa) references Tip_vozila
+	id_vozila integer,
+	foreign key(id_vozila) references vozila
 );
 
 create table Smjene(
