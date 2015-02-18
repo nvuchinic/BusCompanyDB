@@ -6,21 +6,22 @@ create table if not exists Vozila(
 	tip varchar(15)
 );
 
-create table if not exists Tip_vozila(ID_tipa integer primary key autoincrement,
-	tip_vozila varchar (15);
+create table if not exists Tip_vozila(
+ID_tipa integer primary key autoincrement,
+	tip_vozila varchar (15));
 
 create table if not exists Vozaci(
 ID_vozaca integer primary key autoincrement,
 ime varchar(15),
 prezime varchar(15),
-starost smallint default 50
+starost integer 
 );
 
 create table if not exists Linije(
-	redni_broj smallint primary key autoincrement,
+	redni_broj integer primary key autoincrement,
 	prva_stanica varchar(20),
 	zadnja_stanica varchar(20),
-	interval smallint default 60,
+	interval integer,
 	pocetak varchar (5),
 	ID_tipa integer,
 	foreign key(ID_tipa) references Tip_vozila
