@@ -1,8 +1,8 @@
-insert into Vozaci values(1,"boro","drljaca",44);
+insert into Vozaci values(?,"boro","drljaca",44);
 insert into Vozaci values(?,"saban","saulic",45);
 insert into Vozaci values(?,"miroslav","ilic",55);
-insert into Vozaci values(1,"boro","drljaca",44);
-insert into Vozaci values(1,"sinan","sakic",44);
+insert into Vozaci values(?,"marinko","rokvic",44);
+insert into Vozaci values(?,"sinan","sakic",44);
 
 insert into Vozila values(1,1);
 insert into Vozila values(?,1);
