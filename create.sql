@@ -2,7 +2,8 @@
 
 create table Vozila(
 	ID_vozila integer primary key,
-	tip_id integer
+	tip_id integer,
+	foreign key(tip_id) REFERENCES Tip_vpzila
 );
 
 create table Tip_vozila(
