@@ -1,5 +1,4 @@
-.header on
-pragma foreign_keys = on;
+
 
 create table Vozila(
 	ID_vozila integer primary key,
