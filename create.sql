@@ -1,24 +1,24 @@
 .header on
 pragma foreign_keys = on;
 
-create table if not exists Vozila(
-	ID_vozila integer primary key autoincrement,
-	tip varchar(15)
+create table Vozila(
+	ID_vozila integer primary key,
+	tip_id integer
 );
 
-create table if not exists Tip_vozila(
-ID_tipa integer primary key autoincrement,
+create table Tip_vozila(
+tip_ID integer primary key,
 	tip_vozila varchar (15));
 
-create table if not exists Vozaci(
-ID_vozaca integer primary key autoincrement,
+create table Vozaci(
+ID_vozaca integer primary key,
 ime varchar(15),
 prezime varchar(15),
 starost integer 
 );
 
-create table if not exists Linije(
-	redni_broj integer primary key autoincrement,
+create table  Linije(
+	redni_broj integer primary key,
 	prva_stanica varchar(20),
 	zadnja_stanica varchar(20),
 	interval integer,
@@ -27,7 +27,7 @@ create table if not exists Linije(
 	foreign key(ID_tipa) references Tip_vozila
 );
 
-create table if not exists Smjene(
+create table Smjene(
 	ID_smjene integer primary key autoincrement,
  vrsta varchar(5)
  );
