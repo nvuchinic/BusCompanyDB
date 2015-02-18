@@ -12,7 +12,7 @@ create table if not exists Tip_vozila(ID_tipa integer primary key autoincrement,
 create table if not exists Vozaci(
 ID_vozaca integer primary key autoincrement,
 ime varchar(15),
-prezime varchar(15)
+prezime varchar(15),
 starost smallint default 50
 );
 
