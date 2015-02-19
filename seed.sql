@@ -23,8 +23,8 @@ insert into Smjene values(2,II);
 insert into Smjene values(3,III);
 
 insert into Linije values(1,"Dobrinja","Trg Austrije",60,"6.00");
-insert into Linije values(?,"Dobrinja","Otoka",30,"6.00");
-insert into Linije values(?,"Dobrinja","Trg Austrije",60,"6.00");
+insert into Linije values(2,"Dobrinja","Otoka",30,"6.00");
+insert into Linije values(3,"Dobrinja","Trg Austrije",60,"6.00");
 
 insert into vozaci_vozila(1,1);
 insert into vozaci_vozila(1,2);
