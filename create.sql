@@ -24,7 +24,7 @@ create table  Linije(
 	interval integer,
 	pocetak varchar (5),
 	id_vozila integer,
-	foreign key(id_vozila) references vozila
+	
 );
 
 create table Smjene(
@@ -33,8 +33,13 @@ create table Smjene(
  );
 
 create table vozila_vozaci(
-ID_vozaca integer,
-ID_vozila integer,
-foreign key(ID_vozaca) references Vozaci on update cascade on delete cascade,
-foreign key (ID_vozila) references Vozila on update cascade on delete cascade
+vozac_id integer,
+vozilo_id integer,
+foreign key(vozac_id) references Vozaci on update cascade on delete cascade,
+foreign key (vozilo_id) references Vozila on update cascade on delete cascade
+);
+
+create table vozaci_linije(
+vozac_id integer,
+linija_id integer
 );
