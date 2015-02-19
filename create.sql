@@ -2,20 +2,20 @@
 
 create table Vozila(
 
-	vozilo_id integer primary key,
+	id integer primary key,
 	tip varchar not null,
 );
 
 
 create table Vozaci(
-ID_vozaca integer primary key,
+id integer primary key,
 ime varchar(15),
 prezime varchar(15),
 starost integer 
 );
 
 create table  Linije(
-	br_linije integer primary key,
+	id integer primary key,
 	prva_stanica varchar(20),
 	zadnja_stanica varchar(20),
 	interval integer,
