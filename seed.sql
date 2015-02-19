@@ -11,9 +11,9 @@ insert into Vozila values(4,2;
 insert into Vozila values(5,3);
 insert into Vozila values(6,3);
 
-insert into Tip_vozila(1,"autobus");
-insert into Tip_vozila(2,"trolejbus");
-insert into Tip_vozila(3,"tramvaj");
+insert into Tip_vozila values(1,"autobus");
+insert into Tip_vozila values(2,"trolejbus");
+insert into Tip_vozila values(3,"tramvaj");
 
 insert into Smjene values(1,I);
 insert into Smjene values(2,II);
@@ -26,26 +26,26 @@ insert into Linije values(4,"Dobrinja","Vijecnica",20,"6.00");
 insert into Linije values(5,"Dobrinja","Jezero",60,"6.00");
 insert into Linije values(6,"Ilidza","Bascarsija",20,"6.00");
 
-insert into vozaci_vozila(1,1);
-insert into vozaci_vozila(1,2);
-insert into vozaci_vozila(2,2);
-insert into vozaci_vozila(2,3);
-insert into vozaci_vozila(3,1);
-insert into vozaci_vozila(3,3);
-insert into vozaci_vozila(4,4);
-insert into vozaci_vozila(4,5);
-insert into vozaci_vozila(4,6);
+insert into vozaci_vozila values(1,1);
+insert into vozaci_vozila values(1,2);
+insert into vozaci_vozila values(2,2);
+insert into vozaci_vozila values(2,3);
+insert into vozaci_vozila values(3,1);
+insert into vozaci_vozila values(3,3);
+insert into vozaci_vozila values(4,4);
+insert into vozaci_vozila values(4,5);
+insert into vozaci_vozila values(4,6);
 
-insert into vozaci_linije(1,1);
-insert into vozaci_linije(1,5);
-insert into vozaci_linije(2,2);
-insert into vozaci_linije(2,4);
-insert into vozaci_linije(3,6);
-insert into vozaci_linije(3,3);
-insert into vozaci_linije(4,1);
-insert into vozaci_linije(4,5);
-insert into vozaci_linije(5,3);
-insert into vozaci_linije(5,6);
+insert into vozaci_linije values(1,1);
+insert into vozaci_linije values(1,5);
+insert into vozaci_linije values(2,2);
+insert into vozaci_linije values(2,4);
+insert into vozaci_linije values(3,6);
+insert into vozaci_linije values(3,3);
+insert into vozaci_linije values(4,1);
+insert into vozaci_linije values(4,5);
+insert into vozaci_linije values(5,3);
+insert into vozaci_linije values(5,6);
 
 
 
