@@ -29,7 +29,7 @@ create table Smjene(
 	id_vozaca integer, 
 	id_vozila integer,
 	id_linije integer,
-	broj integer default 1,
+	broj integer,
 	id integer primary key autoincrement,
 	foreign key (id_vozaca) references Vozaci on update cascade on delete cascade,
 	foreign key (id_vozila) references Vozila on update cascade on delete cascade,	
